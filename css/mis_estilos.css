@@ -1,0 +1,123 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,100;1,300;1,700&display=swap');
+h1,h2,h3,p,pre,textarea,input,legend{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*header*/
+header{
+    background-color: black;
+}
+header img{
+    width: 100px;
+}
+
+h1{
+    padding: 25px;
+}
+
+/*main*/
+main{
+    background-color: #B59C99;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+}
+.div-btn p{
+    color: white;
+    padding: 5px;
+    font-style: italic;
+    font-weight: 700;
+}
+legend{
+    color: white;
+    padding-bottom: 10%;
+}
+.div-principal, .div-secundario{
+    background-color:#1c1b18;
+    width: 40%;
+    padding: 5%;
+}
+
+.div-principal{
+    border: 3px solid black;
+    margin: 30px;
+    text-align: center;
+}
+textarea{
+   max-width: 90%;
+   min-width: 90%;
+   max-height: 100px;
+   min-height: 100px;
+}
+
+/*botones*/
+button {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.div-secundario{
+    border: 3px solid black;
+    margin: 30px;
+    text-align: center;
+}
+.svg-icon{
+    width: 10px;
+}
+
+
+/*footer*/
+footer{
+    background-color: black;
+    padding: 10px;
+}
+
+footer a, footer p{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .contenedor{
+        flex-direction:column;
+    }
+    .div-principal, .div-secundario{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#1c1b18;
+    width: 60%;
+    }
+    textarea{
+   max-width: 80%;
+   min-width: 80%;
+   max-height: 50px;
+   min-height: 50px;
+    }
+}
